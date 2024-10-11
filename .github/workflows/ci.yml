@@ -14,7 +14,7 @@ jobs:
             -d '{
               "name": "ping google checkrun set status",
               "head_sha": "${{ github.sha }}",
-              "status": "queued",
+              "status": "in_progress",
             }')
             check_run_id=$(echo "$response" | jq -r .id)
             echo "check run id: $check_run_id"
