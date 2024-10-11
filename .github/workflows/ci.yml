@@ -2,8 +2,8 @@ name: abc
 on: push
 jobs:
   job1:
+    runs-on: ubuntu-latest
     steps:
-      runs-on: ubuntu-latest
       - name: create_check_run
         id: check_run
         run: |
